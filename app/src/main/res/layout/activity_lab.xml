@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:orientation="vertical"
+                android:background="@drawable/app_bg"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <TextView
+        android:layout_margin="4dp"
+        android:id="@+id/textView1"
+        android:layout_below="@id/student_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:text="@string/student_id"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/student_name"
+        android:layout_toRightOf="@id/textView1"
+        android:prompt="@string/student_id"
+        android:layout_marginStart="48dp"
+        android:layout_toEndOf="@id/textView1"/>
+
+    <TextView
+        android:id="@+id/student_name"
+        android:layout_marginBottom="36dp"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        tools:text="@string/name"
+        />
+
+    <Button
+        android:id="@+id/mark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/textView1"
+        android:layout_margin="56dp"
+        android:onClick="signin"
+        android:text="@string/mark" />
+
+    <Button
+        android:id="@+id/print"
+        android:layout_width="wrap_content"
+        style="@style/button_style"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mark"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:onClick="signin"
+        android:visibility="gone"
+        android:text="@string/print" />
+</RelativeLayout>
+</RelativeLayout>

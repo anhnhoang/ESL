@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_bg"
+    android:layout_width="match_parent">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+                android:background="@drawable/app_bg"
+    android:orientation="vertical"
+                android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    >
+    <ImageView
+
+        android:src="@drawable/icon"
+        android:layout_height="350dp"
+        android:layout_width="fill_parent"
+        android:scaleType="fitXY"
+        android:id="@+id/mobiIcon"
+        />
+<LinearLayout
+    android:layout_marginTop="24dp"
+    android:layout_below="@id/mobiIcon"
+    android:layout_centerInParent="true"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <Button android:text="@string/director"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:id="@+id/director"
+            android:layout_width="300dp"
+            style="@style/button_style"
+            android:layout_height="wrap_content"/>
+
+
+    <Button
+        style="@style/button_style"
+        android:text="@string/students"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:id="@+id/students"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"/>
+    <Button
+        style="@style/button_style"
+        android:text="Student Sign Up"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:id="@+id/studentsignup_btn"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        style="@style/button_style"
+        android:text="Login"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="24dp"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:id="@+id/studentloginbtn"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/help_button"
+        style="@style/button_style"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="@string/help"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+    <!--<Button-->
+        <!--android:id="@+id/studentsignup_btn"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Student Sign Up" />-->
+
+
+
+    <!--<Button-->
+        <!--android:id="@+id/studentsignup_btn"-->
+        <!--style="@style/button_style"-->
+        <!--android:layout_width="300dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Student Sign Up"-->
+        <!--android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />-->
+
+    <!--<Button-->
+        <!--android:id="@+id/studentloginbtn"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Login" />-->
+
+
+
+</LinearLayout>
+</RelativeLayout>
+    </ScrollView>

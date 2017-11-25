@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_height="match_parent"
+            android:background="@drawable/app_bg"
+            android:layout_width="match_parent">
+<RelativeLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+    <ImageView android:src="@drawable/icon"
+               android:layout_height="wrap_content"
+               android:layout_width="fill_parent"
+               android:id="@+id/mobiIcon"
+               android:scaleType="fitXY"
+        />
+
+
+    <Button
+        android:id="@+id/newtutor"
+        style="@style/button_style"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/viewlabreport"
+        android:layout_alignLeft="@+id/viewtutorreport"
+        android:layout_alignStart="@+id/viewtutorreport"
+        android:text="Add Tutor"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+    <Button android:text="Add Student"
+            style="@style/button_style"
+
+            android:id="@+id/newstudent"
+            android:layout_width="200dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/mobiIcon"
+            android:layout_marginEnd="136dp"
+            android:layout_marginTop="100dp"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="136dp"
+            android:layout_alignParentRight="true"/>
+
+    <Button android:text="Lab Report"
+            style="@style/button_style"
+
+            android:id="@+id/viewlabreport"
+            android:layout_width="200dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/newstudent"
+            android:layout_marginEnd="136dp"
+            android:layout_marginTop="24dp"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="136dp"
+            android:layout_alignParentRight="true" />
+
+    <Button android:text="Tutoring Report"
+            style="@style/button_style"
+
+            android:id="@+id/viewtutorreport"
+            android:layout_width="200dp"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/newtutor"
+            android:layout_marginStart="136dp"
+            android:layout_marginTop="24dp"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="136dp" />
+
+    <Button android:text="Tutoring Graph"
+            android:id="@+id/tutoring_graph"
+            android:layout_width="200dp"
+            style="@style/button_style"
+
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/newtutor"
+            android:layout_marginStart="136dp"
+            android:layout_marginTop="100dp"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="136dp" />
+
+    <Button android:text="Lab Graph"
+            style="@style/button_style"
+
+            android:id="@+id/lab_graph"
+            android:layout_width="200dp"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/viewlabreport"
+            android:layout_marginEnd="136dp"
+            android:layout_marginTop="24dp"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="136dp"
+            android:layout_alignParentRight="true" />
+
+    <Button android:text="Edit tutor phone"
+        style="@style/button_style"
+
+        android:id="@+id/edittutorbtn"
+        android:layout_width="200dp"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/lab_graph"
+        android:layout_marginEnd="136dp"
+        android:layout_marginTop="24dp"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="136dp"
+        android:layout_alignParentRight="true" />
+
+    <Button android:text="Delete Student/Tutor"
+        style="@style/button_style"
+
+        android:id="@+id/deleteStudent"
+        android:layout_width="200dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/tutoring_graph"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="24dp"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="136dp" />
+
+
+    <Button android:text="@string/logout"
+            android:id="@+id/logout"
+            style="@style/button_style"
+
+            android:layout_width="200dp"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/edittutorbtn"
+            android:layout_marginTop="24dp"
+             />
+
+    <!--<Button-->
+        <!--android:id="@+id/edittutorbtn"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignLeft="@+id/tutoring_graph"-->
+        <!--android:layout_alignStart="@+id/tutoring_graph"-->
+        <!--android:layout_below="@+id/lab_graph"-->
+        <!--android:text="Edit Tutor Phone" />-->
+
+    <!--<Button-->
+        <!--android:id="@+id/deleteStudent"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignLeft="@+id/edittutorbtn"-->
+        <!--android:layout_alignStart="@+id/edittutorbtn"-->
+        <!--android:layout_below="@+id/edittutorbtn"-->
+        <!--android:text="Delete Student/tutor" />-->
+
+</RelativeLayout>
+</ScrollView>

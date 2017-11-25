@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="42dp"
+            android:layout_marginRight="42dp"
+            android:layout_marginTop="53dp"
+            android:layout_toLeftOf="@+id/deletestudenttext"
+            android:layout_toStartOf="@+id/deletestudenttext"
+            android:text="Student ID" />
+
+        <Button
+            android:id="@+id/DeleteStudent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="55dp"
+            android:text="Delete Student"
+            android:layout_below="@+id/delete_tutortext"
+            android:layout_alignLeft="@+id/textView"
+            android:layout_alignStart="@+id/textView" />
+
+        <EditText
+            android:id="@+id/deletestudenttext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView"
+            android:layout_alignBottom="@+id/textView"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="87dp"
+            android:layout_marginRight="87dp"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/delete_tutortext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/deletestudenttext"
+            android:layout_alignStart="@+id/deletestudenttext"
+            android:layout_below="@+id/deletestudenttext"
+            android:layout_marginTop="17dp"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/tutorlabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/delete_tutortext"
+            android:layout_alignLeft="@+id/textView"
+            android:layout_alignStart="@+id/textView"
+            android:text="Tutor Name" />
+
+        <Button
+            android:id="@+id/delete_tutor_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/DeleteStudent"
+            android:layout_alignEnd="@+id/delete_tutortext"
+            android:layout_alignRight="@+id/delete_tutortext"
+            android:layout_alignTop="@+id/DeleteStudent"
+            android:layout_marginEnd="18dp"
+            android:layout_marginRight="18dp"
+            android:text="Delete Tutor" />
+
+
+</RelativeLayout>
+

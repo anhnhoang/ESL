@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.esl.edittutoractivity">
+
+    <Button
+        android:id="@+id/savephone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/phone_numbertext"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/phone_numbertext"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="146dp"
+        android:text="Savephone"
+        tools:layout_editor_absoluteX="45dp"
+        tools:layout_editor_absoluteY="111dp" />
+
+    <EditText
+        android:id="@+id/phone_numbertext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="58dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="New Phone Number"
+        tools:layout_editor_absoluteX="37dp"
+        tools:layout_editor_absoluteY="36dp" />
+
+
+</RelativeLayout>

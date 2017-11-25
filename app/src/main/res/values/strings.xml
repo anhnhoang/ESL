@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">ESL Department Attendence</string>
+
+    <string name="director">Director Login</string>
+    <string name="students">Students</string>
+    <string name="sid">Student ID</string>
+    <string name="name">Student Name</string>
+    <string name="classname">Tutoring Subject</string>
+    <string name="tutorname">Tutor Name</string>
+    <string name="newtutor">Add New Tutor</string>
+    <string name="newstudent">Add New Student</string>
+    <string name="logout">Logout</string>
+    <string name="viewlabreport">View Lab Report</string>
+    <string name="fdate">From Date</string>
+    <string name="tdate">To Date</string>
+    <string name="fetch">Fetch Report</string>
+    <string name="viewtutorreport">View Tutoring Report</string>
+    <string name="save">Save Details</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="signin">Login</string>
+    <string name="logintitle">Director Login Screen</string>
+    <string name="tutoring">Tutoring</string>
+    <string name="lab">Lab</string>
+    <string name="back">Back</string>
+    <string name="mark">Mark</string>
+    <string name="comment">Comments</string>
+    <string name="phone">Phone No</string>
+    <string name="print">Print</string>
+    <string name="graph">Graph</string>
+    <string name="help">Help</string>
+    <string name="student_id">Student Id</string>
+    <string name="student_name">Student Name</string>
+    <string name="create_graph">Display Graph</string>
+    <string name="labreport">Lab Graph</string>
+    <string name="tutoring_graph">Tutoring Graph</string>
+    <string name="stedent_name">Student Name:</string>
+</resources>

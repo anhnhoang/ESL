@@ -1,0 +1,80 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              >
+
+    <android.widget.Toolbar
+
+        android:title="Lab Report"
+        android:id="@+id/my_toolbar"
+        android:titleTextColor="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#000"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+       >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center|right">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:gravity="center|right">
+
+            <TextView
+                android:id="@+id/toolbar_title"
+                android:text="Lab Report"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <ImageView
+                android:layout_alignParentRight="true"
+            android:layout_marginEnd="16dp"
+            android:id="@+id/print_Button"
+            android:src="@drawable/ic_print_white_24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"/>
+
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center|right">
+
+            <EditText
+                android:id="@+id/search_editText"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/login_edittext"
+
+                android:hint="Search By Name"
+                android:drawableLeft="@drawable/ic_search_black_24dp"
+                android:gravity="center" >
+
+            </EditText>
+
+        </LinearLayout>
+
+        </LinearLayout>
+    </android.widget.Toolbar>
+
+
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" >
+
+    </ListView>
+</LinearLayout>

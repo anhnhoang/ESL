@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.esl">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Login"
+            android:label="@string/app_name">
+        </activity>
+        <activity
+            android:name=".DirectorPage"
+            android:label="@string/app_name">
+        </activity>
+        <activity
+            android:name=".AddStudent"
+            android:label="@string/app_name">
+        </activity>
+        <activity
+            android:name=".AddTutor"
+            android:label="@string/app_name">
+        </activity>
+        <activity
+            android:name=".StudentPage"
+            android:label="@string/app_name">
+        </activity>
+        <activity
+            android:name=".Lab"
+            android:label="@string/app_name">
+        </activity>
+        <activity
+            android:name=".Tutoring"
+            android:label="@string/app_name">
+        </activity>
+        <activity
+            android:name=".LabReport"
+            android:label="@string/app_name">
+        </activity>
+        <activity
+            android:name=".LabReportView"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:windowSoftInputMode="stateHidden">
+        </activity>
+        <activity
+            android:name=".TutoringReport"
+            android:label="@string/app_name">
+        </activity>
+        <activity
+            android:name=".TutoringReportView"
+            android:label="@string/app_name">
+        </activity>
+        <activity
+            android:name=".TutorGraph"
+            android:label="@string/app_name">
+        </activity>
+        <activity android:name=".HelpActivity">
+        </activity>
+        <activity android:name=".LabGraphActivity">
+        </activity>
+        <activity android:name=".edittutor" />
+        <activity
+            android:name=".Deletestudent"
+            android:label="@string/app_name" />
+
+        <activity
+            android:name=".studentsignup"
+            android:label="@string/app_name" />
+        <activity android:name=".loginstudent" />
+        <activity android:name=".edittutoractivity"></activity>
+    </application>
+
+</manifest>
