@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
         Button studentsignup = (Button) findViewById(R.id.studentsignup_btn);
         studentsignup.setOnClickListener(new Button.OnClickListener() {
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this,studentsignup.class);
+                Intent intent = new Intent(MainActivity.this,logincheck.class);
                 startActivity(intent);
             }
         });

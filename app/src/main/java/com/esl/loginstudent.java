@@ -1,5 +1,6 @@
 package com.esl;
 
+import android.app.Dialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -23,6 +24,8 @@ public class loginstudent extends AppCompatActivity {
         db = new DBConnect(this);
 
         sign = (Button) findViewById(R.id.buttonlogin);
+
+
         sign.setOnClickListener(new Button.OnClickListener() {
 
             public void onClick(View v) {

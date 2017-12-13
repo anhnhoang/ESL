@@ -26,6 +26,7 @@ public class Deletestudent extends AppCompatActivity {
         delete = (Button) findViewById(R.id.DeleteStudent);
         delete2 = (Button) findViewById(R.id.delete_tutor_button);
 
+//        String sid = sid.getText().toString();
 
 
 
@@ -33,11 +34,23 @@ public class Deletestudent extends AppCompatActivity {
         View.OnClickListener listener = new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 switch (v.getId()) {
                     case (R.id.DeleteStudent):
+                        if (sid.getText().toString().trim().length() == 0)
+                        {
+                            Toast.makeText(Deletestudent.this, "Student name Can't blank", Toast.LENGTH_LONG).show();
+
+                        } else
                         deletestudent();
+                        break;
                     case (R.id.delete_tutor_button):
                         try {
+                            if (tutorname.getText().toString().trim().length() == 0)
+                            {
+                                Toast.makeText(Deletestudent.this, "Tutor name Can't blank", Toast.LENGTH_LONG).show();
+
+                            } else
                             delete_Tutor();
                         } catch (Exception e) {
                             e.printStackTrace();

@@ -73,6 +73,8 @@ public class AddStudent extends AppCompatActivity {
             Toast.makeText(AddStudent.this, "Student id or name already exists", Toast.LENGTH_LONG).show();
         }
     }
+
+   
 }
 
 

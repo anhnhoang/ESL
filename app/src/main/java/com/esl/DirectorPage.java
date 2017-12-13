@@ -77,9 +77,6 @@ public class DirectorPage extends AppCompatActivity {
             }
         });
 
-
-
-
         Button logout = (Button) findViewById(R.id.logout);
         logout.setOnClickListener(new Button.OnClickListener() {
             public void onClick(View v) {

@@ -15,7 +15,7 @@
             android:layout_marginTop="53dp"
             android:layout_toLeftOf="@+id/deletestudenttext"
             android:layout_toStartOf="@+id/deletestudenttext"
-            android:text="Student ID" />
+            android:text="Student name" />
 
         <Button
             android:id="@+id/DeleteStudent"

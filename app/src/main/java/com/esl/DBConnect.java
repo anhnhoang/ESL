@@ -157,6 +157,42 @@ public class DBConnect extends SQLiteOpenHelper {
         }
         return map;
     }
+//    public boolean getStudentLogin2(String studentname)
+//    {
+//        SQLiteDatabase db = this.getReadableDatabase();
+//        String Query = "Select * from student where studentname = '" + studentname + "'";
+//        Cursor cursor = db.rawQuery(Query, null);
+//        if(cursor.getCount()<1) // UserName Not Exist
+//        {
+//            cursor.close();
+//            return true;
+//        }
+//        cursor.moveToFirst();
+//        cursor.close();
+//        return false;
+//
+//    }
+//    private static final String TABLE_NAME1 = "student";
+//    private static final String COL3 = "studentname";
+//    public boolean Exists(String studentname) {
+//
+//            SQLiteDatabase db = this.getWritableDatabase();
+//            String query = "SELECT " + COL3 + " FROM " + TABLE_NAME1 +
+//                    " WHERE " + COL3 + " = '" + studentname + "'";
+//            Cursor data = db.rawQuery(query, null);
+//        if(data.getCount()<0) // UserName Not Exist
+//        {
+//
+//            data.close();
+//            return false;
+//
+//        }
+//        data.moveToFirst();
+//        data.close();
+//        return true;
+//
+//    }
+
     //Student Login function
 
     public String getStudentLogin(String studentname)
@@ -188,9 +224,9 @@ public class DBConnect extends SQLiteOpenHelper {
         return sname;
     }
     //delete student
-    public boolean delete_Student(String id){
+    public boolean delete_Student(String studentname){
         SQLiteDatabase db = this.getWritableDatabase();
-        db.delete("student", "studentid" + "="+id,null);
+        db.delete("student", "studentname" + " = '" + studentname + "'", null);
         return true;
     }
 

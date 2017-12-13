@@ -73,5 +73,11 @@ public class studentsignup extends AppCompatActivity {
         }
     }
 
+    //please enter student id
+    //check student id is match in database?
+    //check password are equal
+    //check it sign up for tutor or student signup
+
+
 
 }
